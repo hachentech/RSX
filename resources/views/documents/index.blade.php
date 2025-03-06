@@ -68,7 +68,31 @@
             margin-top: 10px; background-color: #28a745;
         }
     </style>
-</head><!-- Header with buttons -->
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ route('home') }}">Smarttech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('employes.index') }}">Gestion des Employés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('clients.index') }}">Gestion des Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('documents.index') }}">Gestion des Documents</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="header">
     <h2>Gestion des document</h2>
     <a href="{{ route('documents.create') }}" class="btn btn-add">Ajouter un document</a>
